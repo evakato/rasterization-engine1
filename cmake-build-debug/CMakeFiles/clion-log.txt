@@ -1,0 +1,64 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/evakato/CLionProjects/cs334_beginner -B /Users/evakato/CLionProjects/cs334_beginner/cmake-build-debug
+-- Checking for module 'glut'
+--   No package 'glut' found
+CMake Deprecation Warning at deps/libtiff-master/CMakeLists.txt:26 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at deps/libtiff-master/CMakeLists.txt:29 (cmake_policy):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Building tiff version 4.0.9
+-- libtiff library version 5.3.0
+-- CMAKE_HOST_SYSTEM_PROCESSOR set to arm64
+-- HOST_FILLORDER set to FILLORDER_MSB2LSB
+-- HOST_BIG_ENDIAN set to 0
+-- HAVE_IEEEFP set to 1
+-- Could NOT find LibLZMA (missing: LIBLZMA_INCLUDE_DIR) 
+-- Checking for module 'glut'
+--   No package 'glut' found
+-- 
+-- Libtiff is now configured for 
+-- 
+--   Installation directory:             /usr/local
+--   Documentation directory:            /usr/local/share/doc/tiff
+--   C compiler:                         /Library/Developer/CommandLineTools/usr/bin/cc
+--   C++ compiler:                       /Library/Developer/CommandLineTools/usr/bin/c++
+--   Build shared libraries:             ON
+--   Enable linker symbol versioning:    FALSE
+--   Support Microsoft Document Imaging: ON
+--   Use win32 IO:                       FALSE
+-- 
+--  Support for internal codecs:
+--   CCITT Group 3 & 4 algorithms:       ON
+--   Macintosh PackBits algorithm:       ON
+--   LZW algorithm:                      ON
+--   ThunderScan 4-bit RLE algorithm:    ON
+--   NeXT 2-bit RLE algorithm:           ON
+--   LogLuv high dynamic range encoding: ON
+-- 
+--  Support for external codecs:
+--   ZLIB support:                       ON (requested) TRUE (availability)
+--   Pixar log-format algorithm:         ON (requested) TRUE (availability)
+--   JPEG support:                       ON (requested) TRUE (availability)
+--   Old JPEG support:                   ON (requested) TRUE (availability)
+--   JPEG 8/12 bit dual mode:            ON (requested) FALSE (availability)
+--   ISO JBIG support:                   ON (requested) FALSE (availability)
+--   LZMA2 support:                      ON (requested) FALSE (availability)
+-- 
+--   C++ support:                        ON (requested) TRUE (availability)
+-- 
+--   OpenGL support:                     TRUE
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/evakato/CLionProjects/cs334_beginner/cmake-build-debug

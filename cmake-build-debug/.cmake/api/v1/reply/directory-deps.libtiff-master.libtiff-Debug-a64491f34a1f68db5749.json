@@ -1,0 +1,128 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"deps/libtiff-master/libtiff/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 138,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 157,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 162,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib",
+			"paths" : 
+			[
+				"deps/libtiff-master/libtiff/libtiff.5.3.0.dylib",
+				"deps/libtiff-master/libtiff/libtiff.5.dylib"
+			],
+			"targetId" : "tiff::@68de669287a128212da3",
+			"targetIndex" : 22,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib",
+			"paths" : 
+			[
+				"deps/libtiff-master/libtiff/libtiff.dylib"
+			],
+			"targetId" : "tiff::@68de669287a128212da3",
+			"targetIndex" : 22,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/include",
+			"paths" : 
+			[
+				"deps/libtiff-master/libtiff/tiff.h",
+				"deps/libtiff-master/libtiff/tiffio.h",
+				"deps/libtiff-master/libtiff/tiffvers.h",
+				"cmake-build-debug/deps/libtiff-master/libtiff/tiffconf.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib",
+			"paths" : 
+			[
+				"deps/libtiff-master/libtiff/libtiffxx.5.3.0.dylib",
+				"deps/libtiff-master/libtiff/libtiffxx.5.dylib"
+			],
+			"targetId" : "tiffxx::@68de669287a128212da3",
+			"targetIndex" : 41,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/lib",
+			"paths" : 
+			[
+				"deps/libtiff-master/libtiff/libtiffxx.dylib"
+			],
+			"targetId" : "tiffxx::@68de669287a128212da3",
+			"targetIndex" : 41,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/include",
+			"paths" : 
+			[
+				"deps/libtiff-master/libtiff/tiffio.hxx"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "deps/libtiff-master/libtiff",
+		"source" : "deps/libtiff-master/libtiff"
+	}
+}

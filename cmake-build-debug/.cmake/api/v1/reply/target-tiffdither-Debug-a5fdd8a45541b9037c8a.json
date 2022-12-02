@@ -1,0 +1,226 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "deps/libtiff-master/tools/tiffdither"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"deps/libtiff-master/tools/CMakeLists.txt",
+			"deps/libtiff-master/libtiff/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 84,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 119,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 128,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "_FILE_OFFSET_BITS=64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/Users/evakato/CLionProjects/cs334_beginner/deps/libtiff-master/libtiff"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/evakato/CLionProjects/cs334_beginner/cmake-build-debug/deps/libtiff-master/libtiff"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/evakato/CLionProjects/cs334_beginner/deps/libtiff-master/port"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/evakato/CLionProjects/cs334_beginner/cmake-build-debug/deps/libtiff-master/tools"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/GLUT.framework/Headers"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "port::@3abd64521f7323c4d279"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tiff::@68de669287a128212da3"
+		}
+	],
+	"id" : "tiffdither::@de4475c399d887d2fe99",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "/usr/local/bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Users/evakato/CLionProjects/cs334_beginner/cmake-build-debug/deps/libtiff-master/libtiff",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "deps/libtiff-master/libtiff/libtiff.5.3.0.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "deps/libtiff-master/port/libport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libm.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/opt/homebrew/lib/libjpeg.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/liblzma.tbd",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "tiffdither",
+	"nameOnDisk" : "tiffdither",
+	"paths" : 
+	{
+		"build" : "deps/libtiff-master/tools",
+		"source" : "deps/libtiff-master/tools"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "deps/libtiff-master/tools/tiffdither.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

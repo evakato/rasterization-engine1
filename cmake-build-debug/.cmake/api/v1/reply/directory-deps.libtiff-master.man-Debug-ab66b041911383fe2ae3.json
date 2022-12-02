@@ -1,0 +1,120 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"deps/libtiff-master/man/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 94,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/share/man/man1",
+			"paths" : 
+			[
+				"deps/libtiff-master/man/fax2ps.1",
+				"deps/libtiff-master/man/fax2tiff.1",
+				"deps/libtiff-master/man/pal2rgb.1",
+				"deps/libtiff-master/man/ppm2tiff.1",
+				"deps/libtiff-master/man/raw2tiff.1",
+				"deps/libtiff-master/man/tiff2bw.1",
+				"deps/libtiff-master/man/tiff2pdf.1",
+				"deps/libtiff-master/man/tiff2ps.1",
+				"deps/libtiff-master/man/tiff2rgba.1",
+				"deps/libtiff-master/man/tiffcmp.1",
+				"deps/libtiff-master/man/tiffcp.1",
+				"deps/libtiff-master/man/tiffcrop.1",
+				"deps/libtiff-master/man/tiffdither.1",
+				"deps/libtiff-master/man/tiffdump.1",
+				"deps/libtiff-master/man/tiffgt.1",
+				"deps/libtiff-master/man/tiffinfo.1",
+				"deps/libtiff-master/man/tiffmedian.1",
+				"deps/libtiff-master/man/tiffset.1",
+				"deps/libtiff-master/man/tiffsplit.1"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/share/man/man3",
+			"paths" : 
+			[
+				"deps/libtiff-master/man/libtiff.3tiff",
+				"deps/libtiff-master/man/TIFFbuffer.3tiff",
+				"deps/libtiff-master/man/TIFFClose.3tiff",
+				"deps/libtiff-master/man/TIFFcodec.3tiff",
+				"deps/libtiff-master/man/TIFFcolor.3tiff",
+				"deps/libtiff-master/man/TIFFDataWidth.3tiff",
+				"deps/libtiff-master/man/TIFFError.3tiff",
+				"deps/libtiff-master/man/TIFFFieldDataType.3tiff",
+				"deps/libtiff-master/man/TIFFFieldName.3tiff",
+				"deps/libtiff-master/man/TIFFFieldPassCount.3tiff",
+				"deps/libtiff-master/man/TIFFFieldReadCount.3tiff",
+				"deps/libtiff-master/man/TIFFFieldTag.3tiff",
+				"deps/libtiff-master/man/TIFFFieldWriteCount.3tiff",
+				"deps/libtiff-master/man/TIFFFlush.3tiff",
+				"deps/libtiff-master/man/TIFFGetField.3tiff",
+				"deps/libtiff-master/man/TIFFmemory.3tiff",
+				"deps/libtiff-master/man/TIFFOpen.3tiff",
+				"deps/libtiff-master/man/TIFFPrintDirectory.3tiff",
+				"deps/libtiff-master/man/TIFFquery.3tiff",
+				"deps/libtiff-master/man/TIFFReadDirectory.3tiff",
+				"deps/libtiff-master/man/TIFFReadEncodedStrip.3tiff",
+				"deps/libtiff-master/man/TIFFReadEncodedTile.3tiff",
+				"deps/libtiff-master/man/TIFFReadRawStrip.3tiff",
+				"deps/libtiff-master/man/TIFFReadRawTile.3tiff",
+				"deps/libtiff-master/man/TIFFReadRGBAImage.3tiff",
+				"deps/libtiff-master/man/TIFFReadRGBAStrip.3tiff",
+				"deps/libtiff-master/man/TIFFReadRGBATile.3tiff",
+				"deps/libtiff-master/man/TIFFReadScanline.3tiff",
+				"deps/libtiff-master/man/TIFFReadTile.3tiff",
+				"deps/libtiff-master/man/TIFFRGBAImage.3tiff",
+				"deps/libtiff-master/man/TIFFSetDirectory.3tiff",
+				"deps/libtiff-master/man/TIFFSetField.3tiff",
+				"deps/libtiff-master/man/TIFFsize.3tiff",
+				"deps/libtiff-master/man/TIFFstrip.3tiff",
+				"deps/libtiff-master/man/TIFFswab.3tiff",
+				"deps/libtiff-master/man/TIFFtile.3tiff",
+				"deps/libtiff-master/man/TIFFWarning.3tiff",
+				"deps/libtiff-master/man/TIFFWriteDirectory.3tiff",
+				"deps/libtiff-master/man/TIFFWriteEncodedStrip.3tiff",
+				"deps/libtiff-master/man/TIFFWriteEncodedTile.3tiff",
+				"deps/libtiff-master/man/TIFFWriteRawStrip.3tiff",
+				"deps/libtiff-master/man/TIFFWriteRawTile.3tiff",
+				"deps/libtiff-master/man/TIFFWriteScanline.3tiff",
+				"deps/libtiff-master/man/TIFFWriteTile.3tiff"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "deps/libtiff-master/man",
+		"source" : "deps/libtiff-master/man"
+	}
+}

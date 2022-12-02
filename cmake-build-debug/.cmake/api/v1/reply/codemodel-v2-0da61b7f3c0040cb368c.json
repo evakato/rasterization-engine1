@@ -1,0 +1,763 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "deps/libtiff-master",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						17,
+						18,
+						19
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.libtiff-master-Debug-c3d08b1d9d561482161a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master"
+				},
+				{
+					"build" : "deps/libtiff-master/port",
+					"jsonFile" : "directory-deps.libtiff-master.port-Debug-c0c7d8438b51616102ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/port",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "deps/libtiff-master/libtiff",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.libtiff-master.libtiff-Debug-a64491f34a1f68db5749.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/libtiff",
+					"targetIndexes" : 
+					[
+						22,
+						41
+					]
+				},
+				{
+					"build" : "deps/libtiff-master/tools",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.libtiff-master.tools-Debug-d0fbee7b7c201ce0e7fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/tools",
+					"targetIndexes" : 
+					[
+						2,
+						5,
+						6,
+						7,
+						11,
+						13,
+						14,
+						15,
+						18,
+						21,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40
+					]
+				},
+				{
+					"build" : "deps/libtiff-master/test",
+					"jsonFile" : "directory-deps.libtiff-master.test-Debug-f37661e9a93788ed3874.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/test",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						10,
+						16,
+						17,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "deps/libtiff-master/contrib",
+					"childIndexes" : 
+					[
+						7,
+						8,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					],
+					"jsonFile" : "directory-deps.libtiff-master.contrib-Debug-016b59d0da2e4eba77bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib"
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/addtiffo",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.addtiffo-Debug-5e2a0d5b6ac80fc722a8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/addtiffo",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/dbs",
+					"childIndexes" : 
+					[
+						9
+					],
+					"jsonFile" : "directory-deps.libtiff-master.contrib.dbs-Debug-5b58e4b1536f39eaf097.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/dbs",
+					"targetIndexes" : 
+					[
+						23,
+						24,
+						25,
+						26
+					]
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/dbs/xtiff",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.dbs.xtiff-Debug-4e0103ba7e748a68416e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/dbs/xtiff"
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/iptcutil",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.iptcutil-Debug-a418ce193376c5a9a554.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/iptcutil",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/mfs",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.mfs-Debug-6462c7813f543ce84312.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/mfs"
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/pds",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.pds-Debug-d9770952fdc09c2ae170.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/pds"
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/ras",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.ras-Debug-e6805a7ce2bac85e0122.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/ras"
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/stream",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.stream-Debug-48b5040477fe4d53ff0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/stream"
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/tags",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.tags-Debug-cf2063c2c4667f4c8b55.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/tags"
+				},
+				{
+					"build" : "deps/libtiff-master/contrib/win_dib",
+					"jsonFile" : "directory-deps.libtiff-master.contrib.win_dib-Debug-68e17a4559f54a7b22cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/contrib/win_dib"
+				},
+				{
+					"build" : "deps/libtiff-master/build",
+					"jsonFile" : "directory-deps.libtiff-master.build-Debug-a9991c29d01d698e54cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/build"
+				},
+				{
+					"build" : "deps/libtiff-master/man",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.libtiff-master.man-Debug-ab66b041911383fe2ae3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/man"
+				},
+				{
+					"build" : "deps/libtiff-master/html",
+					"childIndexes" : 
+					[
+						20,
+						21
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.libtiff-master.html-Debug-00c69b7b8493c5d45d11.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/html"
+				},
+				{
+					"build" : "deps/libtiff-master/html/images",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.libtiff-master.html.images-Debug-d574f9778e690ed7405f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 19,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/html/images"
+				},
+				{
+					"build" : "deps/libtiff-master/html/man",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.libtiff-master.html.man-Debug-b1f2a9e358090b2ba46a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 19,
+					"projectIndex" : 1,
+					"source" : "deps/libtiff-master/html/man",
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cs334_beginner",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					],
+					"name" : "tiff",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 7,
+					"id" : "addtiffo::@176a7744016515c2e403",
+					"jsonFile" : "target-addtiffo-Debug-3daee9f52f23a50cec23.json",
+					"name" : "addtiffo",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ascii_tag::@7a405b243a4038967895",
+					"jsonFile" : "target-ascii_tag-Debug-5b15b218a968df6ed1c2.json",
+					"name" : "ascii_tag",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "bmp2tiff::@de4475c399d887d2fe99",
+					"jsonFile" : "target-bmp2tiff-Debug-2481cd9a2381b33bad57.json",
+					"name" : "bmp2tiff",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cs334_beginner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cs334_beginner-Debug-457aae3446ebf920210f.json",
+					"name" : "cs334_beginner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "custom_dir::@7a405b243a4038967895",
+					"jsonFile" : "target-custom_dir-Debug-be8f406a8e1b637c2fa4.json",
+					"name" : "custom_dir",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "fax2ps::@de4475c399d887d2fe99",
+					"jsonFile" : "target-fax2ps-Debug-2a46f8d51300f5b47c77.json",
+					"name" : "fax2ps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "fax2tiff::@de4475c399d887d2fe99",
+					"jsonFile" : "target-fax2tiff-Debug-7c3389d3626ddc5d6f97.json",
+					"name" : "fax2tiff",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gif2tiff::@de4475c399d887d2fe99",
+					"jsonFile" : "target-gif2tiff-Debug-8a657b2c3160f0480736.json",
+					"name" : "gif2tiff",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "htmldoc::@7072ebbf01f39fc18784",
+					"jsonFile" : "target-htmldoc-Debug-be6f44646edc5f5adb93.json",
+					"name" : "htmldoc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "iptcutil::@68e5ea563708f987381b",
+					"jsonFile" : "target-iptcutil-Debug-94ec375ee0e52dcac953.json",
+					"name" : "iptcutil",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "long_tag::@7a405b243a4038967895",
+					"jsonFile" : "target-long_tag-Debug-69929eddc5c485047ea8.json",
+					"name" : "long_tag",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "pal2rgb::@de4475c399d887d2fe99",
+					"jsonFile" : "target-pal2rgb-Debug-99c7513dc607cc136100.json",
+					"name" : "pal2rgb",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "port::@3abd64521f7323c4d279",
+					"jsonFile" : "target-port-Debug-00bf0e554c180bd01589.json",
+					"name" : "port",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ppm2tiff::@de4475c399d887d2fe99",
+					"jsonFile" : "target-ppm2tiff-Debug-bc8a9c2c6af8227ed594.json",
+					"name" : "ppm2tiff",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "ras2tiff::@de4475c399d887d2fe99",
+					"jsonFile" : "target-ras2tiff-Debug-8284eb83f447d578bf5d.json",
+					"name" : "ras2tiff",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "raw2tiff::@de4475c399d887d2fe99",
+					"jsonFile" : "target-raw2tiff-Debug-4feb2a9cbb328fccf210.json",
+					"name" : "raw2tiff",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "raw_decode::@7a405b243a4038967895",
+					"jsonFile" : "target-raw_decode-Debug-4e5f7dd73ecb94a20a9a.json",
+					"name" : "raw_decode",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "rewrite::@7a405b243a4038967895",
+					"jsonFile" : "target-rewrite-Debug-b3e5fe8ae4c22d017210.json",
+					"name" : "rewrite",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "rgb2ycbcr::@de4475c399d887d2fe99",
+					"jsonFile" : "target-rgb2ycbcr-Debug-c60c388be49a19a5bd5d.json",
+					"name" : "rgb2ycbcr",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "short_tag::@7a405b243a4038967895",
+					"jsonFile" : "target-short_tag-Debug-e35fa21665f0b78cd54d.json",
+					"name" : "short_tag",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "strip_rw::@7a405b243a4038967895",
+					"jsonFile" : "target-strip_rw-Debug-ce506c400744bfbfc00a.json",
+					"name" : "strip_rw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "thumbnail::@de4475c399d887d2fe99",
+					"jsonFile" : "target-thumbnail-Debug-90ae4473c2b74aeded38.json",
+					"name" : "thumbnail",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "tiff::@68de669287a128212da3",
+					"jsonFile" : "target-tiff-Debug-4135bb666e99fd16521b.json",
+					"name" : "tiff",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "tiff-bi::@395eac2d446433023237",
+					"jsonFile" : "target-tiff-bi-Debug-7e734dd7ded2d2a02fef.json",
+					"name" : "tiff-bi",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "tiff-grayscale::@395eac2d446433023237",
+					"jsonFile" : "target-tiff-grayscale-Debug-2c91f5c517d9643132b3.json",
+					"name" : "tiff-grayscale",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "tiff-palette::@395eac2d446433023237",
+					"jsonFile" : "target-tiff-palette-Debug-9db82aad6993a25c8fec.json",
+					"name" : "tiff-palette",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "tiff-rgb::@395eac2d446433023237",
+					"jsonFile" : "target-tiff-rgb-Debug-d9a5369129d180a9b314.json",
+					"name" : "tiff-rgb",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiff2bw::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiff2bw-Debug-bde650b3e1e6a0f561af.json",
+					"name" : "tiff2bw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiff2pdf::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiff2pdf-Debug-0ca20a6ab97a304762f2.json",
+					"name" : "tiff2pdf",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiff2ps::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiff2ps-Debug-9d2aede80b85ac7b7c2f.json",
+					"name" : "tiff2ps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiff2rgba::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiff2rgba-Debug-e3499cd4d579d0450de5.json",
+					"name" : "tiff2rgba",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffcmp::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffcmp-Debug-026b4849520e7b90af21.json",
+					"name" : "tiffcmp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffcp::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffcp-Debug-8d5fe86bb30432376d3c.json",
+					"name" : "tiffcp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffcrop::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffcrop-Debug-666ce056c8db05c06e34.json",
+					"name" : "tiffcrop",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffdither::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffdither-Debug-a5fdd8a45541b9037c8a.json",
+					"name" : "tiffdither",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffdump::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffdump-Debug-a695d7f8fb1c5695c423.json",
+					"name" : "tiffdump",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffgt::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffgt-Debug-d357fb4bb42a6ccadc15.json",
+					"name" : "tiffgt",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffinfo::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffinfo-Debug-0b52692c13632aa1202b.json",
+					"name" : "tiffinfo",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffmedian::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffmedian-Debug-1ed9bf2b31238d4770f4.json",
+					"name" : "tiffmedian",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffset::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffset-Debug-a042387489d5de28b33e.json",
+					"name" : "tiffset",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "tiffsplit::@de4475c399d887d2fe99",
+					"jsonFile" : "target-tiffsplit-Debug-190a2303a5a63b43dfe0.json",
+					"name" : "tiffsplit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "tiffxx::@68de669287a128212da3",
+					"jsonFile" : "target-tiffxx-Debug-6d1630680a529fda564a.json",
+					"name" : "tiffxx",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/evakato/CLionProjects/cs334_beginner/cmake-build-debug",
+		"source" : "/Users/evakato/CLionProjects/cs334_beginner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

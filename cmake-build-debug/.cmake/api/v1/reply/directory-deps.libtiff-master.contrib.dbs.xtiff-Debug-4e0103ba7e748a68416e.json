@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "deps/libtiff-master/contrib/dbs/xtiff",
+		"source" : "deps/libtiff-master/contrib/dbs/xtiff"
+	}
+}

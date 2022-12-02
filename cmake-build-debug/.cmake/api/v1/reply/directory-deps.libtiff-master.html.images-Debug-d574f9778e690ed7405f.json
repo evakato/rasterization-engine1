@@ -1,0 +1,58 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"deps/libtiff-master/html/images/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/share/doc/tiff/html/images",
+			"paths" : 
+			[
+				"deps/libtiff-master/html/images/back.gif",
+				"deps/libtiff-master/html/images/bali.jpg",
+				"deps/libtiff-master/html/images/cat.gif",
+				"deps/libtiff-master/html/images/cover.jpg",
+				"deps/libtiff-master/html/images/cramps.gif",
+				"deps/libtiff-master/html/images/dave.gif",
+				"deps/libtiff-master/html/images/info.gif",
+				"deps/libtiff-master/html/images/jello.jpg",
+				"deps/libtiff-master/html/images/jim.gif",
+				"deps/libtiff-master/html/images/note.gif",
+				"deps/libtiff-master/html/images/oxford.gif",
+				"deps/libtiff-master/html/images/quad.jpg",
+				"deps/libtiff-master/html/images/ring.gif",
+				"deps/libtiff-master/html/images/smallliz.jpg",
+				"deps/libtiff-master/html/images/strike.gif",
+				"deps/libtiff-master/html/images/warning.gif"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "deps/libtiff-master/html/images",
+		"source" : "deps/libtiff-master/html/images"
+	}
+}

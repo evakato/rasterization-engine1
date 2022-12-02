@@ -1,0 +1,327 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"deps/libtiff-master/tools/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 137,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/bmp2tiff"
+			],
+			"targetId" : "bmp2tiff::@de4475c399d887d2fe99",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/fax2ps"
+			],
+			"targetId" : "fax2ps::@de4475c399d887d2fe99",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/fax2tiff"
+			],
+			"targetId" : "fax2tiff::@de4475c399d887d2fe99",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/gif2tiff"
+			],
+			"targetId" : "gif2tiff::@de4475c399d887d2fe99",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/pal2rgb"
+			],
+			"targetId" : "pal2rgb::@de4475c399d887d2fe99",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/ppm2tiff"
+			],
+			"targetId" : "ppm2tiff::@de4475c399d887d2fe99",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/ras2tiff"
+			],
+			"targetId" : "ras2tiff::@de4475c399d887d2fe99",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/raw2tiff"
+			],
+			"targetId" : "raw2tiff::@de4475c399d887d2fe99",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/rgb2ycbcr"
+			],
+			"targetId" : "rgb2ycbcr::@de4475c399d887d2fe99",
+			"targetIndex" : 18,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/thumbnail"
+			],
+			"targetId" : "thumbnail::@de4475c399d887d2fe99",
+			"targetIndex" : 21,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiff2bw"
+			],
+			"targetId" : "tiff2bw::@de4475c399d887d2fe99",
+			"targetIndex" : 27,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiff2pdf"
+			],
+			"targetId" : "tiff2pdf::@de4475c399d887d2fe99",
+			"targetIndex" : 28,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiff2ps"
+			],
+			"targetId" : "tiff2ps::@de4475c399d887d2fe99",
+			"targetIndex" : 29,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiff2rgba"
+			],
+			"targetId" : "tiff2rgba::@de4475c399d887d2fe99",
+			"targetIndex" : 30,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffcmp"
+			],
+			"targetId" : "tiffcmp::@de4475c399d887d2fe99",
+			"targetIndex" : 31,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffcp"
+			],
+			"targetId" : "tiffcp::@de4475c399d887d2fe99",
+			"targetIndex" : 32,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffcrop"
+			],
+			"targetId" : "tiffcrop::@de4475c399d887d2fe99",
+			"targetIndex" : 33,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffdither"
+			],
+			"targetId" : "tiffdither::@de4475c399d887d2fe99",
+			"targetIndex" : 34,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffdump"
+			],
+			"targetId" : "tiffdump::@de4475c399d887d2fe99",
+			"targetIndex" : 35,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffinfo"
+			],
+			"targetId" : "tiffinfo::@de4475c399d887d2fe99",
+			"targetIndex" : 37,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffmedian"
+			],
+			"targetId" : "tiffmedian::@de4475c399d887d2fe99",
+			"targetIndex" : 38,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffset"
+			],
+			"targetId" : "tiffset::@de4475c399d887d2fe99",
+			"targetIndex" : 39,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffsplit"
+			],
+			"targetId" : "tiffsplit::@de4475c399d887d2fe99",
+			"targetIndex" : 40,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/bin",
+			"paths" : 
+			[
+				"deps/libtiff-master/tools/tiffgt"
+			],
+			"targetId" : "tiffgt::@de4475c399d887d2fe99",
+			"targetIndex" : 36,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "deps/libtiff-master/tools",
+		"source" : "deps/libtiff-master/tools"
+	}
+}
