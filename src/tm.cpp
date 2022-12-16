@@ -29,15 +29,15 @@ void TM::SetTriangle(V3 v0, V3 v1, V3 v2) {
     cols = new V3[vertsN];
     cols[0] =
     cols[1] =
-    cols[2] = V3(1.0f, 1.0f, 1.0f);
+    cols[2] = V3(0.0f, 0.0f, 1.0f);
     normals = new V3[vertsN];
     normals[0] =
     normals[1] =
     normals[2] = ((v1 - v0) ^ (v2 - v0)).UnitVector();
     tcs = new V3[vertsN];
     tcs[0] = V3(0.0f, 0.0f, 0.0f);
-    tcs[1] = V3(1.0f, 0.0f, 0.0f);
-    tcs[2] = V3(0.5f, 1.0f, 0.0f);
+    tcs[1] = V3(5.0f, 0.0f, 0.0f);
+    tcs[2] = V3(5.0f, 5.0f, 0.0f);
 }
 
 void TM::SetAsAACube(V3 cc, float sideLength) {
@@ -120,7 +120,7 @@ void TM::SetAsAACube(V3 cc, float sideLength) {
     cols[4] =
     cols[5] =
     cols[6] =
-    cols[7] = V3(1.0f, 1.0f, 1.0f);
+    cols[7] = V3(0.0f, 1.0f, 1.0f);
 
     tcs = new V3[vertsN];
     tcs[0] = V3(0.0f, 1.0f, 0.0f);
@@ -353,7 +353,7 @@ void TM::RenderFillWithShadow(PPC *ppc, FrameBuffer *fb, V3 matColor, V3 ld, flo
     }
 }
 
-void TM::RenderFillTexture(PPC *ppc, FrameBuffer *fb) {
+void TM::RenderFillTexture(PPC *ppc, FrameBuffer *fb, int textureMode) {
 
     for (int tri = 0; tri < trisN; tri++) {
         V3 vs[3], cs[3], ns[3], ttcs[3];
@@ -361,8 +361,9 @@ void TM::RenderFillTexture(PPC *ppc, FrameBuffer *fb) {
             vs[vi] = verts[tris[3 * tri + vi]];
             cs[vi] = cols[tris[3 * tri + vi]];
             ns[vi] = normals[tris[3 * tri + vi]];
-            if (tcs)
+            if (tcs) {
                 ttcs[vi] = tcs[tris[3 * tri + vi]];
+            }
         }
 
         // project vertices
@@ -421,8 +422,25 @@ void TM::RenderFillTexture(PPC *ppc, FrameBuffer *fb) {
                     if (texture) {
                         // interpolated texture coordinates
                         V3 currtcs = letcs*pixv;
-                        //fb->Set(u, v, texture->LookUpNN(currtcs[0], currtcs[1]));
-                        fb->Set(u, v, (int) texture->LookUpBilinear(currtcs[0], currtcs[1]));
+                        float xTex = currtcs[0];
+                        float yTex = currtcs[1];
+                        if (textureMode == 0) {
+                            if (xTex > 1.0f)
+                                xTex = xTex - ((int) xTex);
+                            if (yTex > 1.0f)
+                                yTex = yTex - ((int) yTex);
+                        } else {
+                            if ((int) xTex % 2 == 0)
+                                xTex = xTex - ((int) xTex);
+                            else
+                                xTex = 1 - abs(xTex - ((int) xTex));
+                            if ((int) yTex % 2 == 0)
+                                yTex = yTex - ((int) yTex);
+                            else
+                                yTex = 1 - abs(yTex - ((int) yTex));
+                        }
+                        fb->Set(u, v, (int) texture->LookUpBilinear(xTex, yTex));
+                        //fb->Set(u, v, texture->LookUpNN(xTex, yTex));
                     }
                 }
             }
@@ -611,6 +629,13 @@ void TM::SetTexturedRectangle(float rectw, float recth) {
 //	   \
 //		   \
 //1(0, 1)       2 (1, 1)
+    tris = new unsigned int[trisN*3];
+    tris[0] = 0;
+    tris[1] = 1;
+    tris[2] = 2;
+    tris[3] = 0;
+    tris[4] = 3;
+    tris[5] = 2;
 
     verts[0] = V3(-rectw / 2.0f, recth / 2.0f, 0.0f);
     verts[1] = V3(-rectw / 2.0f, -recth / 2.0f, 0.0f);
@@ -624,13 +649,56 @@ void TM::SetTexturedRectangle(float rectw, float recth) {
 
     cols[0] = cols[1] = cols[2] = cols[3] = V3(1.0f, 0.0f, 0.0f);
 
-    float tc = 1.0f;
+    float tc = 2.0f;
     tcs[0] = V3(0.0f, 0.0f, 0.0f);
     tcs[1] = V3(0.0f, tc, 0.0f);
     tcs[2] = V3(tc, tc, 0.0f);
     tcs[3] = V3(tc, 0.0f, 0.0f);
 
 }
+
+// vertical rectangle in x0y plane, with O as center
+void TM::SetQuad(V3 v1, V3 v2, V3 v3, V3 v4) {
+
+    trisN = 2;
+    vertsN = 4;
+    verts = new V3[vertsN];
+    cols = new V3[vertsN];
+    normals = new V3[vertsN];
+    tcs = new V3[vertsN];
+
+//0(0, 0)       3 (1, 0)
+//	   \
+//		   \
+//1(0, 1)       2 (1, 1)
+    tris = new unsigned int[trisN*3];
+    tris[0] = 0;
+    tris[1] = 1;
+    tris[2] = 2;
+    tris[3] = 0;
+    tris[4] = 3;
+    tris[5] = 2;
+
+    verts[0] = v1;
+    verts[1] = v2;
+    verts[2] = v3;
+    verts[3] = v4;
+
+    normals[0] =
+    normals[1] =
+    normals[2] =
+    normals[3] = ((v2 - v1) ^ (v3 - v1)).UnitVector();
+
+    cols[0] = cols[1] = cols[2] = cols[3] = V3(0.5f, 0.5f, 0.5f);
+
+    float tc = 2.0f;
+    tcs[0] = V3(0.0f, 0.0f, 0.0f);
+    tcs[1] = V3(0.0f, tc, 0.0f);
+    tcs[2] = V3(tc, tc, 0.0f);
+    tcs[3] = V3(tc, 0.0f, 0.0f);
+
+}
+
 
 void TM::RenderHW() {
 

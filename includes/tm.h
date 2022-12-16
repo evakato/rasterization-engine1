@@ -25,7 +25,7 @@ public:
     void RenderFill(PPC *ppc, FrameBuffer *fb);
     void RenderFill(PPC *ppc, FrameBuffer *fb, V3 matColor, V3 ld, float ka, float ambientFactor, float specularExp);
     void RenderFillWithShadow(PPC *ppc, FrameBuffer *fb, V3 matColor, V3 ld, float ka, float ambientFactor, float specularExp, class Light *light);
-    void RenderFillTexture(PPC *ppc, FrameBuffer *fb);
+    void RenderFillTexture(PPC *ppc, FrameBuffer *fb, int textureMode);
     void RenderFill(PPC *ppc, FrameBuffer *fb, V3 matColor, V3 ld, float ka, float ambientFactor, float specularExp, CubeMap *cubemap);
     V3 GetCenter();
     void Translate(V3 tv);
@@ -37,6 +37,7 @@ public:
     void SetAsCopy(TM *tm);
     void Explode(float t);
     void SetTexturedRectangle(float rectw, float recth);
+    void SetQuad(V3 v1, V3 v2, V3 v3, V3 v4);
     void RenderHW();
     void RenderHWTexture();
     void HWCube();

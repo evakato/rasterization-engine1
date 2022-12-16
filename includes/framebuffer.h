@@ -47,4 +47,5 @@ public:
     unsigned int LookUpBilinear(float s, float t);
     unsigned int Get(int u, int v);
     void SetTextureImage(char *fname);
+    void TextureLookupWrap(float u, float v);
 };

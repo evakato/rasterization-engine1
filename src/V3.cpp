@@ -242,4 +242,3 @@ void V3::SetAsEdgeEquation(V3 p0, V3 p1, V3 p2) {
         v = v * -1.0f;
 
 }
-

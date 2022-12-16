@@ -33,6 +33,10 @@ private:
     static void cb_Shadow(Fl_Return_Button*, void*);
     inline void cb_EnvMap_i(Fl_Return_Button*, void*);
     static void cb_EnvMap(Fl_Return_Button*, void*);
+    inline void cb_Tile_i(Fl_Return_Button*, void*);
+    static void cb_Tile(Fl_Return_Button*, void*);
+    inline void cb_Mirror_i(Fl_Return_Button*, void*);
+    static void cb_Mirror(Fl_Return_Button*, void*);
 public:
     void show();
     void DBG_cb();
@@ -45,5 +49,7 @@ public:
     void SpecularD_cb();
     void Shadow_cb();
     void EnvMap_cb();
+    void Tile_cb();
+    void Mirror_cb();
 };
 #endif

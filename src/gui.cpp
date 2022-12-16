@@ -70,6 +70,20 @@ void GUI::cb_EnvMap_i(Fl_Return_Button*, void*) {
 void GUI::cb_EnvMap(Fl_Return_Button* o, void* v) {
     ((GUI*)(o->parent()->user_data()))->cb_EnvMap_i(o,v);
 }
+
+void GUI::cb_Tile_i(Fl_Return_Button*, void*) {
+    Tile_cb();
+}
+void GUI::cb_Tile(Fl_Return_Button* o, void* v) {
+    ((GUI*)(o->parent()->user_data()))->cb_Tile_i(o,v);
+}
+
+void GUI::cb_Mirror_i(Fl_Return_Button*, void*) {
+    Mirror_cb();
+}
+void GUI::cb_Mirror(Fl_Return_Button* o, void* v) {
+    ((GUI*)(o->parent()->user_data()))->cb_Mirror_i(o,v);
+}
 #include "scene.h"
 
 GUI::GUI() {
@@ -107,6 +121,12 @@ GUI::GUI() {
         }
         { Fl_Button* o = new Fl_Button(110, 260, 80, 50, "Env Map");
             o->callback((Fl_Callback*)cb_EnvMap);
+        }
+        { Fl_Button* o = new Fl_Button(30, 320, 80, 50, "Tiling");
+            o->callback((Fl_Callback*)cb_Tile);
+        }
+        { Fl_Button* o = new Fl_Button(110, 320, 80, 50, "Mirroring");
+            o->callback((Fl_Callback*)cb_Mirror);
         }
         uiw->end();
     } // Fl_Double_Window* uiw
@@ -159,4 +179,12 @@ void GUI::Shadow_cb() {
 
 void GUI::EnvMap_cb() {
     scene->EnvMap();
+}
+
+void GUI::Tile_cb() {
+    scene->Tile();
+}
+
+void GUI::Mirror_cb() {
+    scene->Mirror();
 }

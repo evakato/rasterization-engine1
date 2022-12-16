@@ -60,14 +60,17 @@ Scene::Scene() {
     light->C = V3(100.0f, 50.0f, -200.0f);
 
     shadingMode = 0;
+    textureMode = 0;
     ambientFactor = 0.0f;
     specularExp = 0.0f;
-    tmsN = 2;
+    tmsN = 4;
     tms = new TM[tmsN];
-    //tms[0].SetTriangle(V3(-50.0f, 0.0f, 0.0f), V3(0.0f, 50.0f, 0.0f), V3(50.0f, 0.0f, 0.0f));
-    tms[0].LoadBin("geometry/teapot1k.bin");
-    tms[0].SetCenter(V3(0.0f, 0.0f, -200.0f));
-    tms[1].SetAsAACube(V3(-100.0f, 0.0f, -300.0f), 50.0);
+    tms[0].SetTriangle(V3(-50.0f, -25.0f, -100.0f), V3(0.0f, 25.0f, -100.0f), V3(50.0f, -25.0f, -100.0f));
+    //tms[0].LoadBin("geometry/teapot1k.bin");
+    //tms[0].SetCenter(V3(0.0f, 0.0f, -200.0f));
+
+    //tms[0].SetAsAACube(V3(0.0f, 0.0f, -200.0f), 50.0);
+
     //tms[0].LoadBin("geometry/teapot57k.bin");
     //tms[0].SetCenter(V3(0.0f, 0.0f, -200.0f));
     //tms[1].SetTriangle(V3(-200.0f, -70.f, 0.0f),  V3(200.0f, -70.f, 0.0f), V3(-200.0f, -70.f, -400.0f));
@@ -146,7 +149,7 @@ void Scene::RenderTexture(PPC *rppc, FrameBuffer *rfb) {
     rfb->SetBGR(0xFFFFFFFF);
     rfb->SetZB(0.0f);
     for (int tmi = 0; tmi < tmsN; tmi++) {
-        tms[tmi].RenderFillTexture(rppc, rfb);
+        tms[tmi].RenderFillTexture(rppc, rfb, textureMode);
     }
     rfb->redraw();
     Fl::check();
@@ -221,6 +224,46 @@ void Scene::Render() {
 
 void Scene::DBG() {
 
+    {
+        shadingMode = 4;
+        textureMode = 0;
+
+        float sl2 = 50.0f / 2.0f;
+        V3 v1 = V3(-sl2, +sl2, +sl2);
+        V3 v2 = V3(-sl2, -sl2, +sl2);
+        V3 v3 = V3(+sl2, -sl2, +sl2);
+        V3 v4 = V3(+sl2, +sl2, +sl2);
+        V3 v5 = V3(-sl2, +sl2, -sl2);
+        V3 v6 = V3(-sl2, -sl2, -sl2);
+        V3 v7 = V3(+sl2, -sl2, -sl2);
+        V3 v8 = V3(+sl2, +sl2, -sl2);
+        FrameBuffer *stonetext = new FrameBuffer(100, 100, 200, 200);
+        stonetext->SetTextureImage("textures/stone.jpg");
+        /*
+        FrameBuffer *woodtext = new FrameBuffer(100, 100, 200, 200);
+        woodtext->SetTextureImage("textures/wood.png");
+        FrameBuffer *metaltext = new FrameBuffer(100, 100, 200, 200);
+        metaltext->SetTextureImage("textures/metal.jpg");
+        FrameBuffer *anotherwoodtext = new FrameBuffer(100, 100, 200, 200);
+        anotherwoodtext->SetTextureImage("textures/woodfloor.jpg");
+         */
+
+        tms[0].SetQuad(v1, v2, v3, v4);
+        tms[0].Translate(V3(0.0f, 0.0f, -200.0f));
+        tms[1].SetQuad(v5, v1, v4, v8);
+        tms[1].Translate(V3(0.0f, 0.0f, -200.0f));
+        tms[2].SetQuad(v5, v1, v2, v6);
+        tms[2].Translate(V3(0.0f, 0.0f, -200.0f));
+        tms[3].SetQuad(v2, v8, v7, v3);
+        tms[3].Translate(V3(0.0f, 0.0f, -200.0f));
+
+        tms[0].texture = stonetext;
+        tms[1].texture = stonetext;
+        tms[2].texture = stonetext;
+        tms[3].texture = stonetext;
+        Render();
+        return;
+    }
 
     /*
     {
@@ -250,6 +293,7 @@ void Scene::DBG() {
     }
     */
 
+    /*
     {
 
         clock_t current_ticks, delta_ticks;
@@ -280,7 +324,9 @@ void Scene::DBG() {
 
         return;
     }
+     */
 
+    /*
     {
         shadingMode = 4;
         float sl2 = 25.0f;
@@ -310,18 +356,20 @@ void Scene::DBG() {
         tms[2].Translate(V3(0.0f, 0.0f, -200.0f));
         tms[2].texture = texture;
          */
+    /*
 
-        fb3->hide();
-        /*
-        for (int fi = 0; fi < 450; fi++) {
-            Render();
-            Fl::check();
-            tms[0].Rotate(tms[0].GetCenter(), V3(0.0f, 1.0f, 0.0f), .1f);
-        }
-         */
+    fb3->hide();
+    for (int fi = 0; fi < 450; fi++) {
         Render();
-        return;
+        Fl::check();
+        tms[0].Rotate(tms[0].GetCenter(), V3(0.0f, 1.0f, 0.0f), .1f);
     }
+    Render();
+    return;
+}
+     */
+
+
     /*
     {
         TM tm;
@@ -364,15 +412,6 @@ void Scene::DBG() {
         return;
     }
      */
-
-
-    {
-        //V3 matColor(1.0f, 0.0f, 0.0f);
-        //float ka = 0.03f;
-        //tms[0].Light(matColor, ka, light->GetVD());
-        Render();
-        return;
-    }
 
     {
 
@@ -619,6 +658,16 @@ void Scene::RotateMesh() {
     tms[0].Rotate(V3(0.0f, 0.0f, 0.0f), V3(0.0f, 1.0f, 0.0f), 0.05f);
     RenderLSM(fb);
     RenderLSM(fb3);
+    Render();
+}
+
+void Scene::Tile() {
+    textureMode = 0;
+    Render();
+}
+
+void Scene::Mirror() {
+    textureMode = 1;
     Render();
 }
 

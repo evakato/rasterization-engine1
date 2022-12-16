@@ -18,6 +18,7 @@ public:
     V3 hwClearColor;
     int tmsN;
     int shadingMode;
+    int textureMode;
     float ambientFactor;
     float specularExp;
     FrameBuffer *textures;
@@ -64,6 +65,8 @@ public:
     void Shadow();
     void RotateMesh();
     void ReposLight();
+    void Tile();
+    void Mirror();
 };
 
 extern Scene *scene;

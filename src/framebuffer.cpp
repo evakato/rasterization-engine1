@@ -782,3 +782,9 @@ void FrameBuffer::SetTextureImage(char *fname) {
         }
     }
 }
+
+void FrameBuffer::TextureLookupWrap(float u, float v) {
+    int i = round(u * w - 0.5);
+    int j = round(v * h - 0.5);
+    LookUpNN(i % w, j % h);
+}
